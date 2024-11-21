@@ -1,0 +1,90 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 50fr));
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 500px;
+  }
+  
+  .card {
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    background-color: #feb236;
+    color: #fff;
+  }
+  
+  .card.correct {
+    background-color: green;
+    color: white;
+    pointer-events: none;
+  }
+  
+  .card.incorrect {
+    background-color: red;
+    color: white;
+    pointer-events: none;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6b5b95, #feb236);
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    width: 300px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+  
+  button {
+    background-color: #feb236;
+    border: none;
+    color: #000;
+    padding: 20px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff7b25;
+  }
+  
+  #msg {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  #resBtm {
+    margin-top: 15px;
+  }
+    
